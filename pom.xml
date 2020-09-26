@@ -5,6 +5,7 @@
 	<groupId>com.in28minutes.springboot</groupId>
 	<artifactId>spring-boot-rest-services-all-examples-for-springboottutorial.com</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -87,6 +88,11 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency> 
+  			 <groupId>org.springframework.boot</groupId>
+ 			  <artifactId>spring-boot-starter-tomcat</artifactId>         
+  			 <scope>provided</scope> 
+ 		</dependency>
 <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/sonar-maven-plugin -->
 <dependency>
     <groupId>org.codehaus.mojo</groupId>
