@@ -6,7 +6,11 @@ import org.springframework.context.ApplicationContext;
 
 
 @SpringBootApplication
-public class StudentApplication {
+public class StudentApplication extends SpringBootServletInitializer {
+	@Override
+	 protected SpringApplicationBuilder configure(SpringApplicationBuilder app) {
+         return app.sources(StudentApplication.class);
+     }
 
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(
